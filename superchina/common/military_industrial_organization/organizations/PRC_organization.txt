@@ -1,0 +1,1846 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+ 
+ PRC_factory_617_organization = {
+ 	include = generic_medium_tank_organization
+ 	name = PRC_factory_617_organization
+ 	icon = GFX_idea_PRC_factory_617
+
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 	}
+
+ 	available = {
+ 		OR = {
+	 		PRC = {
+ 				controls_state = 621
+ 			}
+ 			621 = {
+ 				has_dynamic_modifier = {
+ 					modifier = PRC_infiltrated_state_3
+ 				}
+ 			}
+ 		}
+
+ 	}
+
+ 	add_trait = {
+ 		token = PRC_factory_617_early_mbt_trait
+ 		name = PRC_factory_617_early_mbt_trait
+ 		icon = GFX_my_custom_mio_custom_1
+ 		
+ 		special_trait_background = yes
+
+ 		relative_position_id =	generic_mio_trait_crew_survival_layout
+ 		position = {
+ 			x = 0
+ 			y = 1
+ 		}
+
+ 		any_parent = {
+ 			generic_mio_trait_crew_survival_layout  
+ 			generic_mio_trait_spaced_armor
+ 			generic_mio_trait_sloped_side_armor
+ 		}
+
+ 		limit_to_equipment_type = { modern_tank_chassis }
+
+ 		equipment_bonus = {
+ 			breakthrough = 0.2	
+ 		}
+ 		organization_modifier = {
+ 			military_industrial_organization_research_bonus = 0.15
+ 		}
+
+ 	}
+
+ }
+
+ PRC_first_tractor_company_organization = {
+	include = generic_tank_organization
+	name = PRC_first_tractor_company_organization
+ 	icon = GFX_idea_PRC_first_tractor_company
+
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 	}
+
+ 	available = {
+ 		PRC = {
+ 			has_completed_focus = PRC_agricultural_reform 	
+ 		}
+ 		
+ 	}
+
+
+ 	add_trait = {
+ 		token = PRC_first_tractor_company_peoples_tank_trait
+ 		name = PRC_first_tractor_company_peoples_tank_trait
+ 		icon = GFX_generic_mio_department_icon_tank_light_tank_quality
+ 		
+ 		special_trait_background = yes 
+
+
+ 		relative_position_id = generic_mio_trait_improved_tracks 
+ 		position = {
+ 			x = -1
+ 			y = 0
+ 		}
+
+ 		all_parents = {
+ 			generic_mio_trait_improved_tracks
+ 		}
+
+ 		production_bonus = {
+ 			production_conversion_speed_factor = 0.25
+ 		}
+
+
+ 	}
+
+ }
+
+PRC_tank_organization = {
+	icon = GFX_idea_generic_tank_manufacturer_1
+
+	equipment_type = { 
+		armor 
+	}
+	research_categories = { mio_cat_tech_all_armor_and_modules }
+
+	allowed = {	
+		tag = PRC
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	tree_header_text = {
+		text = mio_header_armor
+		x = 4
+	}
+
+	initial_trait = {
+		name = generic_mio_initial_trait_standardized_production
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+
+		equipment_bonus = {
+			reliability = 0.20
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.2
+			production_efficiency_cap_factor = 0.15
+			production_resource_need_factor = -0.2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_long_barreled_guns
+		name = generic_mio_trait_long_barreled_guns
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=0 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_defensive_equipment
+		name = generic_mio_trait_defensive_equipment
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=0 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_command_upgrades
+		name = generic_mio_trait_command_upgrades
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=2 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_infantry_support_tanks
+		name = generic_mio_trait_infantry_support_tanks
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=2 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_quality_improvements
+		name = generic_mio_trait_quality_improvements
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=4 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_anti_tank_specialization
+		name = generic_mio_trait_anti_tank_specialization
+		icon = GFX_generic_mio_trait_icon_hard_attack
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=4 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_standardized_turrets
+		name = generic_mio_trait_standardized_turrets
+		icon = GFX_generic_mio_department_icon_tank_general_quality
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=6 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_improved_wheel_protection
+		name = generic_mio_trait_improved_wheel_protection
+		icon = GFX_generic_mio_department_icon_tank_light_tank_armor
+
+		equipment_bonus = {
+			armor_value = 0.05 
+			maximum_speed = 0.05 
+		}
+
+		position = { x=6 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_improved_tracks
+		name = generic_mio_trait_improved_tracks
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		equipment_bonus = {
+			maximum_speed = 0.10
+		}
+
+		position = { x=8 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_crew_ergonomics
+		name = generic_mio_trait_crew_ergonomics
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		equipment_bonus = {
+			maximum_speed = 0.10
+		}
+
+		position = { x=8 y=2 }
+	}
+}
+
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+PRC_shipbuilding_industry_bureau_organization = {
+	include = generic_escort_ship_organization
+	name = PRC_shipbuilding_industry_bureau_organization
+ 	icon = GFX_idea_PRC_shipbuilding_industry_bureau
+
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 	}
+
+ 	available = {
+ 		PRC = {
+ 			has_completed_focus = PRC_establish_pla_navy 
+ 		}
+ 	}
+
+	tree_header_text = {
+		text = mio_header_systems
+		x = 1
+	}
+
+	tree_header_text = {
+		text = mio_header_weapons
+		x = 5
+	}
+	tree_header_text = {
+		text = PRC_shipbuilding_industry_bureau_organization_header
+		x = 9
+	}
+
+
+ 	add_trait = {
+ 		token = PRC_shipbuilding_industry_bureau_nascant_shipbuilding_trait
+ 		name = PRC_shipbuilding_industry_bureau_nascant_shipbuilding_trait
+ 		icon = GFX_generic_mio_department_icon_facilities
+ 		
+ 		special_trait_background = yes 
+
+
+ 		relative_position_id = generic_mio_trait_fleet_escorts 
+ 		position = {
+ 			x = 3
+ 			y = 0
+ 		}
+
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.2
+		} 
+
+ 		equipment_bonus = {
+ 			reliability = 0.1
+ 		}
+ 	}
+
+ 	add_trait = {
+ 		token = PRC_shipbuilding_industry_bureau_office_of_the_science_technology_committee_trait
+ 		name = PRC_shipbuilding_industry_bureau_office_of_the_science_technology_committee_trait
+ 		icon = GFX_generic_mio_trait_icon_naval_range
+ 		
+ 		special_trait_background = yes 
+
+ 		all_parents = {
+ 			PRC_shipbuilding_industry_bureau_nascant_shipbuilding_trait
+ 		}
+
+ 		relative_position_id = PRC_shipbuilding_industry_bureau_nascant_shipbuilding_trait 
+ 		position = {
+ 			x = 0
+ 			y = 3
+ 		}
+
+ 		organization_modifier = {
+ 			military_industrial_organization_research_bonus = 0.15
+ 		}
+ 		
+
+
+ 	}
+
+
+
+}
+
+
+PRC_dalian_shipbuilding_company_organization = {
+	include = generic_task_force_ship_organization
+	name = PRC_dalian_shipbuilding_company_organization
+ 	icon = GFX_idea_PRC_dalian_shipbuilding_company
+
+
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 	}
+
+ 	available = {
+ 		OR = {
+	 		PRC = {
+ 				controls_state = 716
+ 			}
+ 			716 = {
+ 				has_dynamic_modifier = {
+ 					modifier = PRC_infiltrated_state_3
+ 				}
+ 			}
+ 		}
+
+ 	}
+
+
+	tree_header_text = {
+		text = mio_header_systems
+		x = 1
+	}
+
+	tree_header_text = {
+		text = mio_header_weapons
+		x = 5
+	}
+
+	tree_header_text = {
+		text = PRC_dalian_shipbuilding_company_organization_header
+		x = 9
+	}
+
+
+ 	add_trait = {
+ 		token = PRC_dalian_shipbuilding_company_carrier_learners
+ 		name = PRC_dalian_shipbuilding_company_carrier_learners
+ 		icon = GFX_generic_mio_department_icon_ship_carrier_conversion
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_primary_fire_director_control
+
+ 		position = {
+ 			x = 1
+ 			y = 0
+ 		}
+
+ 		limit_to_equipment_type =  { 
+ 			mio_cat_eq_all_carrier
+		}
+
+ 		available = {
+ 			PRC = {
+ 				has_completed_focus = PRC_carriers
+ 			}
+ 		}
+
+ 		production_bonus = {
+ 			production_conversion_speed_factor = 0.4
+ 		}
+
+ 		organization_modifier = {
+ 			military_industrial_organization_size_up_requirement = -0.15
+ 		}
+
+
+ 	}
+
+ 	add_trait = {
+ 		token = PRC_dalian_shipbuilding_company_domestic_carriers_trait
+ 		name = PRC_dalian_shipbuilding_company_domestic_carriers_trait
+ 		icon = GFX_generic_mio_department_icon_ship_carrier_production
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = PRC_dalian_shipbuilding_company_carrier_learners
+
+ 		all_parents = {
+ 			PRC_dalian_shipbuilding_company_carrier_learners
+ 		}
+ 		position = {
+ 			x = 0
+ 			y = 1
+ 		}
+
+
+ 		limit_to_equipment_type =  { 
+ 			mio_cat_eq_all_carrier
+		}
+
+
+ 		production_bonus = {
+ 			production_cost_factor = -0.05
+ 		}
+
+ 		organization_modifier = {
+ 			military_industrial_organization_funds_gain = 0.25
+ 		}
+ 	}
+
+ 	add_trait = {
+ 		token = PRC_dalian_shipbuilding_company_mass_production_carriers_trait
+ 		name = PRC_dalian_shipbuilding_company_mass_production_carriers_trait
+ 		icon = GFX_generic_mio_department_icon_ship_carrier_engine
+
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = PRC_dalian_shipbuilding_company_domestic_carriers_trait
+
+ 		all_parents = {
+ 			PRC_dalian_shipbuilding_company_domestic_carriers_trait
+ 		}
+ 		position = {
+ 			x = 0
+ 			y = 1
+ 		}
+
+ 		available = {
+ 			PRC = {
+ 				has_completed_focus = PRC_naval_capstone
+ 			}
+ 		}
+
+
+ 		limit_to_equipment_type =  { 
+			mio_cat_eq_all_carrier
+		}
+
+		equipment_bonus = {
+			build_cost_ic = -0.15
+		}
+
+ 		organization_modifier = {
+ 			military_industrial_organization_design_team_assign_cost = -0.2
+ 		}
+ 	}
+
+
+}
+
+PRC_ship_organization = {
+	icon = GFX_idea_generic_naval_manufacturer_1
+
+	equipment_type = {
+		mio_cat_eq_all_carrier
+		capital_ship
+		screen_ship
+		submarine
+		convoy
+		support_ship
+	}
+	research_categories = {
+		naval_equipment
+	}
+
+	allowed = {	
+		tag = PRC
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	tree_header_text = {
+		text = mio_header_systems
+		x = 4
+	}
+
+	initial_trait = {
+		name = generic_mio_initial_trait_raiding_fleet
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.30
+		}
+
+		equipment_bonus = {
+			reliability = 0.10
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.25
+			production_resource_need_factor = -0.2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_semi_armor_piercing_shells
+		name = generic_mio_trait_semi_armor_piercing_shells
+		icon = GFX_generic_mio_trait_icon_lg_attack
+
+		equipment_bonus = {
+			naval_speed = 0.10
+		}
+
+		position = { x=0 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_super_heavy_shells
+		name = generic_mio_trait_super_heavy_shells
+		icon = GFX_generic_mio_trait_icon_hg_attack
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=0 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_secondary_fire_director_control
+		name = generic_mio_trait_secondary_fire_director_control
+		icon = GFX_generic_mio_department_icon_ship_capital_ship_offense
+
+		equipment_bonus = {
+			max_strength = 0.10
+		}
+
+		position = { x=2 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_large_torpedo_banks
+		name = generic_mio_trait_large_torpedo_banks
+		icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+		equipment_bonus = {
+			naval_torpedo_damage_reduction_factor = 0.10
+		}
+
+		position = { x=2 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_anti_torpedo_bulge
+		name = generic_mio_trait_anti_torpedo_bulge
+		icon = GFX_generic_mio_trait_icon_naval_torpedo_damage_reduction_factor
+
+		equipment_bonus = {
+			naval_torpedo_enemy_critical_chance_factor = -0.10
+		}
+
+		position = { x=4 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_submarine_hunters
+		name = generic_mio_trait_submarine_hunters
+		icon = GFX_generic_mio_trait_icon_sub_attack
+
+		equipment_bonus = {
+			anti_air_attack = 0.10
+		}
+
+		position = { x=4 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_transom_stern
+		name = generic_mio_trait_transom_stern
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		equipment_bonus = {
+			naval_speed = 0.10
+		}
+
+		position = { x=6 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_bulkhead_shoring_procedure
+		name = generic_mio_trait_bulkhead_shoring_procedure
+		icon = GFX_generic_mio_department_icon_ship_capital_screen_armor
+
+		equipment_bonus = {
+			surface_detection = 0.10
+		}
+
+		position = { x=6 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_flooding_boundries
+		name = generic_mio_trait_flooding_boundries
+		icon = GFX_generic_mio_trait_icon_max_strength
+
+		equipment_bonus = {
+			max_strength = 0.10
+		}
+
+		position = { x=8 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_high_powered_steering
+		name = generic_mio_trait_high_powered_steering
+		icon = GFX_generic_mio_department_icon_ship_capital_screen_armor
+
+		equipment_bonus = {
+			armor_value = 0.10
+		}
+
+		position = { x=8 y=2 }
+	}
+}
+
+
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+PRC_peoples_aviation_company_of_china_organization = {
+	include = generic_general_aircraft_organization 
+	name = PRC_peoples_aviation_company_of_china_organization
+ 	icon = GFX_idea_PRC_peoples_aviation_company_of_china
+
+ 	allowed = {
+	 	OR = {
+	 		AND = {
+	 			tag = PRC
+	 			has_dlc = "No Compromise, No Surrender"
+	 		}
+	 		AND = {
+	 			original_tag = PHI 
+	 			has_dlc = "No Compromise, No Surrender"
+	 		}
+	 	}
+	}
+
+	available = {
+		if = {
+			limit = {
+				FROM = {
+					original_tag = PHI
+				}
+			}
+			FROM = {
+				has_completed_focus = PHI_smugglers
+			}
+		}
+	}
+
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+		mio_cat_eq_all_medium_plane
+		mio_cat_eq_only_strategic_bomber
+		transport_plane_equipment
+	}
+
+
+ 	add_trait = {
+ 		token = PRC_peoples_aviation_company_of_china_transport_planes_trait
+ 		name = PRC_peoples_aviation_company_of_china_transport_planes_trait
+ 		icon = GFX_mio_cat_eq_all_large_plane
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_conservative_designs
+
+ 		all_parents = {
+ 			generic_mio_trait_conservative_designs
+ 		}
+
+ 		position = {
+ 			x = 5
+ 			y = 1
+ 		} 
+
+ 		limit_to_equipment_type	= { transport_plane_equipment_1 transport_plane_equipment_2 transport_plane_equipment_3 }
+
+ 		production_bonus = {
+ 			production_cost_factor = -0.15
+ 		}
+ 	}
+
+ 	add_trait = {
+ 		token = PRC_peoples_aviation_company_of_china_power_of_monopoly_trait
+ 		name = PRC_peoples_aviation_company_of_china_power_of_monopoly_trait
+ 		icon = GFX_generic_mio_trait_icon_efficiency_gain
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = PRC_peoples_aviation_company_of_china_transport_planes_trait
+
+ 		all_parents = {
+ 			PRC_peoples_aviation_company_of_china_transport_planes_trait
+ 		}
+
+ 		position = {
+ 			x = 0
+ 			y = 2
+ 		} 
+
+
+ 		production_bonus = {
+ 			production_cost_factor = -0.075
+ 		}
+ 	}
+
+
+
+
+	
+}
+
+
+
+
+
+PRC_shenyang_aircraft_corporation_organization_non_bba = { ## No jet fighters
+	include = generic_high_agility_fighter_aircraft_organization 
+	name = PRC_shenyang_aircraft_corporation_organization
+ 	icon = GFX_idea_PRC_shenyang_aircraft_corporation
+
+
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 		NOT = { 
+ 			has_dlc = "By Blood Alone" 
+		}
+ 	}
+
+ 	available = {
+ 		OR = {
+	 		PRC = {
+ 				controls_state = 716
+ 			}
+ 			716 = {
+ 				has_dynamic_modifier = {
+ 					modifier = PRC_infiltrated_state_3
+ 				}
+ 			}
+ 		}
+ 	}
+
+
+ 	add_trait = {
+
+ 		token = PRC_shenyang_aircraft_corporation_factory_112_trait
+ 		name = PRC_shenyang_aircraft_corporation_factory_112_trait
+ 		icon = GFX_generic_mio_department_icon_facilities
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_fabric_skin
+
+ 		any_parent = {	generic_mio_trait_fabric_skin generic_mio_trait_metal_skin }
+
+
+ 		position = {
+ 			x = 1
+ 			y = 2
+ 		} 
+
+ 		limit_to_equipment_type = { jet_fighter_equipment_1 jet_fighter_equipment_2 jet_tac_bomber_equipment_1 jet_tac_bomber_equipment_2 }
+
+ 		production_bonus = {
+ 			production_capacity_factor = 0.15
+ 		}
+ 	}
+
+
+ 	add_trait = {
+
+ 		token = PRC_shenyang_aircraft_corporation_domestic_jet_manufacturer_trait
+ 		name = PRC_shenyang_aircraft_corporation_domestic_jet_manufacturer_trait
+ 		icon = GFX_military_industrial_organization_jet_fighter_equipment
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_fabric_skin
+
+ 		all_parents = {
+ 			PRC_shenyang_aircraft_corporation_factory_112_trait
+ 			generic_mio_trait_fuel_injection_engines
+ 		}
+
+ 		position = {
+ 			x = 1
+ 			y = 4
+ 		} 
+
+ 		limit_to_equipment_type = { jet_fighter_equipment_1 jet_fighter_equipment_2 jet_tac_bomber_equipment_1 jet_tac_bomber_equipment_2 }
+
+ 		equipment_bonus = {
+ 			air_agility = 0.15
+ 		}
+
+ 		production_bonus = {
+ 			production_capacity_factor = 0.1
+ 		}
+ 	}
+
+
+}
+
+
+
+
+
+PRC_shenyang_aircraft_corporation_organization= { ## No jet fighters
+	include = generic_high_agility_fighter_aircraft_organization 
+	name = PRC_shenyang_aircraft_corporation_organization
+ 	icon = GFX_idea_PRC_shenyang_aircraft_corporation
+
+
+
+	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+		has_dlc = "By Blood Alone" 
+ 	}
+
+ 	available = {
+ 		OR = {
+	 		PRC = {
+ 				controls_state = 716
+ 			}
+ 			716 = {
+ 				has_dynamic_modifier = {
+ 					modifier = PRC_infiltrated_state_3
+ 				}
+ 			}
+ 		}
+ 	}
+
+
+ 	add_trait = {
+
+ 		token = PRC_shenyang_aircraft_corporation_factory_112_trait
+ 		name = PRC_shenyang_aircraft_corporation_factory_112_trait
+ 		icon = GFX_generic_mio_department_icon_facilities
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_fabric_skin
+
+ 		any_parent = {	generic_mio_trait_fabric_skin generic_mio_trait_metal_skin }
+
+
+ 		position = {
+ 			x = 1
+ 			y = 2
+ 		} 
+
+ 		limit_to_equipment_type = { 
+			small_plane_airframe_4
+			cv_small_plane_airframe_4
+		}
+
+ 		production_bonus = {
+ 			production_capacity_factor = 0.15
+ 		}
+ 	}
+
+
+ 	add_trait = {
+
+ 		token = PRC_shenyang_aircraft_corporation_domestic_jet_manufacturer_trait
+ 		name = PRC_shenyang_aircraft_corporation_domestic_jet_manufacturer_trait
+ 		icon = GFX_military_industrial_organization_jet_fighter_equipment
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_fabric_skin
+
+ 		all_parents = {
+ 			PRC_shenyang_aircraft_corporation_factory_112_trait
+ 			generic_mio_trait_fuel_injection_engines
+ 		}
+
+ 		position = {
+ 			x = 1
+ 			y = 4
+ 		} 
+
+ 		limit_to_equipment_type = { 
+			small_plane_airframe_4
+			cv_small_plane_airframe_4
+		}
+
+ 		equipment_bonus = {
+ 			air_agility = 0.15
+ 		}
+
+ 		production_bonus = {
+ 			production_capacity_factor = 0.1
+ 		}
+ 	}
+
+
+}
+
+
+
+PRC_harbin_aircraft_industry_group_organization = {
+	include = generic_multi_role_aircraft_organization 
+	name = PRC_harbin_aircraft_industry_group_organization
+ 	icon = GFX_idea_PRC_harbin_aircraft
+
+ 	available = {
+ 		OR = {
+	 		PRC = {
+ 				controls_state = 328
+ 			}
+ 			328 = {
+ 				has_dynamic_modifier = {
+ 					modifier = PRC_infiltrated_state_3
+ 				}
+ 			}
+ 		}
+ 	}
+
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+		mio_cat_eq_all_medium_plane
+		transport_plane_equipment
+ 		helicopter_equipment ## Include helicopters
+	}
+	
+	tree_header_text = {
+		text = PRC_harbin_aircraft_industry_group_organization_header
+		x = 0 
+	}
+		tree_header_text = {
+		text = mio_header_light_aircraft
+		x = 3
+	}
+
+	tree_header_text = {
+		text = mio_header_medium_aircraft
+		x = 6
+	}
+
+
+	research_categories = { mio_cat_all_light_aircraft_and_modules mio_cat_all_medium_aircraft_and_modules helicopter_tech }
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 		has_dlc = "Gotterdammerung"
+ 	}
+
+
+ 	add_trait = {
+
+ 		token = PRC_harbin_aircraft_industry_group_harbin_aircraft_manufacturing_plant_trait
+ 		name = PRC_harbin_aircraft_industry_group_harbin_aircraft_manufacturing_plant_trait
+ 		icon = GFX_generic_mio_department_icon_helicopter
+
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_armored_cockpit
+
+ 		all_parents = {
+ 			generic_mio_trait_armored_cockpit
+ 		}
+
+ 		position = {
+ 			x = -3
+ 			y = 3
+ 		} 
+
+ 		limit_to_equipment_type = { helicopter_equipment }
+
+ 		production_bonus = {
+ 			production_capacity_factor = 0.15
+ 		}
+
+ 	}
+
+
+ 	add_trait = {
+ 		token = PRC_harbin_aircraft_industry_group_factory_122_trait
+ 		name = PRC_harbin_aircraft_industry_group_factory_122_trait
+ 		icon = GFX_generic_mio_department_icon_plane_general_conversion
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_escort_designs
+ 		position = {
+ 			x = 2
+ 			y = 1
+ 		}
+
+ 		all_parents = {
+ 			generic_mio_trait_escort_designs
+ 		}
+
+ 		production_bonus = {
+ 			production_conversion_speed_factor = 0.1
+ 		}
+
+ 	}
+
+
+}
+
+
+
+PRC_harbin_aircraft_industry_group_organization_non_gtd = { ## No Helicopters
+	include = generic_multi_role_aircraft_organization 
+	name = PRC_harbin_aircraft_industry_group_organization
+ 	icon = GFX_idea_PRC_harbin_aircraft
+
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 		NOT = { 
+ 			has_dlc = "Gotterdammerung" 
+		}
+ 	}
+
+ 	available = {
+ 		OR = {
+	 		PRC = {
+ 				controls_state = 328
+ 			}
+ 			328 = {
+ 				has_dynamic_modifier = {
+ 					modifier = PRC_infiltrated_state_3
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	add_trait = {
+ 		token = PRC_harbin_aircraft_industry_group_factory_122_trait
+ 		name = PRC_harbin_aircraft_industry_group_factory_122_trait
+ 		icon = GFX_generic_mio_department_icon_plane_general_conversion
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_escort_designs
+ 		position = {
+ 			x = 2
+ 			y = 1
+ 		}
+
+ 		all_parents = {
+ 			generic_mio_trait_escort_designs
+ 		}
+
+ 		production_bonus = {
+ 			production_conversion_speed_factor = 0.1
+ 		}
+
+ 	}
+
+
+}
+
+PRC_aircraft_organization = {
+	icon = GFX_idea_generic_air_manufacturer_1
+
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+		mio_cat_eq_all_medium_plane 
+		mio_cat_eq_all_large_plane
+		transport_plane_equipment
+		mothership_equipment
+		guided_missile_equipment
+		ballistic_missile_equipment
+		strat_bomber_intercontinental_equipment
+		nuclear_missile_equipment
+		sam_missile_equipment
+	}
+	research_categories = {
+		air_equipment
+	}
+
+	allowed = {	
+		tag = PRC
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	tree_header_text = {
+		text = mio_header_wings
+		x = 4
+	}
+
+	initial_trait = {
+		name = generic_mio_initial_trait_general_aircraft_designer
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.15
+		}
+
+		equipment_bonus = {
+			reliability = 0.15
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.2
+			production_efficiency_cap_factor = 0.15
+			production_resource_need_factor = -0.2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_variable_pitch_propellers
+		name = generic_mio_trait_variable_pitch_propellers
+		icon = GFX_generic_mio_trait_icon_air_agility
+
+		equipment_bonus = {
+			air_agility = 0.10
+		}
+
+		position = { x=0 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_upgraded_engines
+		name = generic_mio_trait_upgraded_engines
+		icon = GFX_generic_mio_department_icon_plane_general_engine
+
+		equipment_bonus = {
+			air_agility = 0.10
+		}
+
+		position = { x=0 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_heavy_fighters
+		name = generic_mio_trait_heavy_fighters
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+		equipment_bonus = {
+			air_attack = 0.10
+		}
+
+		position = { x=2 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_high_capacity_ammunition
+		name = generic_mio_trait_high_capacity_ammunition
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+		equipment_bonus = {
+			air_defence = 0.10
+		}
+
+		position = { x=2 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_long_range_fighters
+		name = generic_mio_trait_long_range_fighters
+		icon = GFX_generic_mio_department_icon_plane_light_engine
+
+		equipment_bonus = {
+			air_range = 0.10
+		}
+
+		position = { x=4 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_long_range_modifications
+		name = generic_mio_trait_long_range_modifications
+		icon = GFX_generic_mio_trait_icon_naval_range
+
+		equipment_bonus = {
+			maximum_speed = 0.10
+		}
+
+		position = { x=4 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_high_explosive_payload
+		name = generic_mio_trait_high_explosive_payload
+		icon = GFX_generic_mio_department_icon_plane_medium_combat
+
+		equipment_bonus = {
+			air_attack = 0.10
+		}
+
+		position = { x=6 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_strafing_techniques
+		name = generic_mio_trait_strafing_techniques
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
+
+		equipment_bonus = {
+			air_defence = 0.10
+		}
+
+		position = { x=6 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_bomber_specialization
+		name = generic_mio_trait_bomber_specialization
+		icon = GFX_generic_mio_department_icon_plane_general_combat
+
+		equipment_bonus = {
+			air_range = 0.10
+		}
+
+		position = { x=8 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_advanced_instruments
+		name = generic_mio_trait_advanced_instruments
+		icon = GFX_generic_mio_trait_icon_strategic_attack
+
+		equipment_bonus = {
+			maximum_speed = 0.10
+		}
+
+		position = { x=8 y=2 }
+	}
+}
+
+
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+
+
+
+PRC_ordenance_bureau_organization = {
+	include = generic_artillery_organization
+	name = PRC_ordenance_bureau_organization
+ 	icon = GFX_idea_PRC_ordenance_bureau
+
+ 	allowed = {
+	 	OR = {
+	 		AND = {
+	 			tag = PRC
+	 			has_dlc = "No Compromise, No Surrender"
+	 		}
+	 		AND = {
+	 			original_tag = PHI 
+	 			has_dlc = "No Compromise, No Surrender"
+	 		}
+	 	}
+	}
+
+	available = {
+		if = {
+			limit = {
+				FROM = {
+					original_tag = PHI
+				}
+			}
+			FROM = {
+				has_completed_focus = PHI_smugglers
+			}
+		}
+	}
+
+
+	add_trait = {
+
+ 		token = PRC_ordenance_bureau_central_planning_trait
+ 		name = PRC_ordenance_bureau_central_planning_trait
+ 		icon = GFX_generic_mio_trait_icon_build_cost_ic
+
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_sliding_breech_block
+
+ 		all_parents = {
+ 			generic_mio_trait_sliding_breech_block
+ 		}
+
+ 		position = {
+ 			x = 0
+ 			y = 2
+ 		} 
+
+ 		
+
+ 		production_bonus = {
+ 			production_cost_factor = -0.075
+ 		}
+
+ 	}
+
+
+}
+
+
+PRC_huangyadong_arsenal_organization = {
+	include = generic_support_equipment_organization
+	name = PRC_huangyadong_arsenal_organization
+ 	icon = GFX_idea_PRC_huangyadong_arsenal
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+	}
+
+	available = {
+		OR = {
+	 		PRC = {
+ 				controls_state = 615
+ 			}
+ 			615 = {
+ 				has_dynamic_modifier = {
+ 					modifier = PRC_infiltrated_state_3
+ 				}
+ 			}
+ 		}
+	}
+
+	tree_header_text = {
+		text = mio_header_support
+		x = 1
+	}
+	tree_header_text = {
+		text = PRC_huangyadong_arsenal_organization_header
+		x = 3
+	}
+
+	tree_header_text = {
+		text = mio_header_weapons
+		x = 6.5
+	}
+
+	add_trait = {
+
+ 		token = PRC_huangyadong_arsenal_cave_industry_trait
+ 		name = PRC_huangyadong_arsenal_cave_industry_trait
+ 		icon = GFX_generic_mio_department_icon_tank_general_spg
+
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_private_scientists_program
+
+
+ 		position = {
+ 			x = -2
+ 			y = 0
+ 		} 
+
+ 		
+
+ 		production_bonus = {
+ 			production_cost_factor = -0.05
+ 		}
+
+ 		organization_modifier = {
+ 			military_industrial_organization_design_team_assign_cost = -0.25
+ 		}
+
+ 	}
+
+	add_trait = {
+
+ 		token = PRC_huangyadong_arsenal_jewell_in_the_crown_trait
+ 		name = PRC_huangyadong_arsenal_jewell_in_the_crown_trait
+ 		icon = GFX_generic_mio_trait_icon_unique
+
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = PRC_huangyadong_arsenal_cave_industry_trait
+
+ 		all_parents = {
+ 			PRC_huangyadong_arsenal_cave_industry_trait
+ 		}
+
+ 		position = {
+ 			x = 0
+ 			y = 1
+ 		} 
+
+		equipment_bonus = {
+			soft_attack = 0.05
+		} 		
+
+ 		organization_modifier = {
+ 			military_industrial_organization_funds_gain = 0.1
+ 		}
+
+ 	}
+
+
+}
+
+
+
+
+
+
+PRC_cmc_military_industry_bureau_organization = {
+	include = generic_infantry_equipment_organization
+	name = PRC_cmc_military_industry_bureau_organization
+ 	icon = GFX_idea_PRC_cmc_military_industry_bureau
+
+ 	allowed = {
+	 	OR = {
+	 		AND = {
+	 			tag = PRC
+	 			has_dlc = "No Compromise, No Surrender"
+	 		}
+	 		AND = {
+	 			original_tag = PHI 
+	 			has_dlc = "No Compromise, No Surrender"
+	 		}
+	 	}
+	}
+
+	available = {
+		if = {
+			limit = {
+				FROM = {
+					original_tag = PHI
+				}
+			}
+			FROM = {
+				has_completed_focus = PHI_smugglers
+			}
+		}
+	}
+
+	add_trait = {
+
+ 		token = PRC_cmc_military_industry_bureau_center_of_the_red_arsenal_trait
+ 		name = PRC_cmc_military_industry_bureau_center_of_the_red_arsenal_trait
+ 		icon = GFX_generic_mio_department_icon_infantry_offense
+
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_drum_pattern_sights
+
+
+ 		position = {
+ 			x = 2
+ 			y = 0
+ 		} 
+
+ 		equipment_bonus = {
+ 			soft_attack = 0.05
+ 		}
+
+ 		organization_modifier = {
+ 			military_industrial_organization_funds_gain = 0.05
+ 			military_industrial_organization_design_team_assign_cost = -0.1
+ 		}
+
+ 	}
+
+}
+
+
+
+
+PRC_first_automative_works_organization = {
+	include = generic_motorized_mechanized_organization
+	name = PRC_first_automative_works_organization
+ 	icon = GFX_idea_PRC_first_automative_works
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 		has_dlc = "La Resistance"
+	}
+
+	equipment_type = {
+		armored_car_equipment ### Include armored cars
+		motorized_equipment
+		mechanized_equipment
+		motorized_rocket_equipment
+		
+	}
+
+	research_categories = {
+		mio_cat_tech_all_motorized_mechanized
+		cat_armored_cars
+	}
+
+
+	add_trait = {
+		token = PRC_first_automative_works_soviet_advisors_trait
+ 		name = PRC_first_automative_works_soviet_advisors_trait
+ 		icon = GFX_generic_mio_trait_icon_surface_detection
+
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_closed_chassi
+
+
+ 		position = {
+ 			x = 1
+ 			y = 0
+ 		} 
+
+ 		production_bonus = {
+ 			production_conversion_speed_factor = 0.15
+ 		}
+
+ 		organization_modifier = {
+ 			military_industrial_organization_funds_gain = 0.05
+ 			military_industrial_organization_design_team_assign_cost = -0.1
+ 		}
+	}
+
+
+}
+
+
+PRC_first_automative_works_organization_non_lar = {
+	include = generic_motorized_mechanized_organization
+	name = PRC_first_automative_works_organization
+ 	icon = GFX_idea_PRC_first_automative_works
+
+ 	allowed = {
+ 		tag = PRC
+ 		has_dlc = "No Compromise, No Surrender"
+ 		NOT = {
+ 			has_dlc = "La Resistance"
+ 		}
+	}
+
+	add_trait = {
+		token = PRC_first_automative_works_soviet_advisors_trait
+ 		name = PRC_first_automative_works_soviet_advisors_trait
+ 		icon = GFX_generic_mio_trait_icon_surface_detection
+
+
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_closed_chassi
+
+
+ 		position = {
+ 			x = 1
+ 			y = 0
+ 		} 
+
+ 		production_bonus = {
+ 			production_conversion_speed_factor = 0.15
+ 		}
+
+ 		organization_modifier = {
+ 			military_industrial_organization_funds_gain = 0.05
+ 			military_industrial_organization_design_team_assign_cost = -0.1
+ 			military_industrial_organization_design_team_change_cost = -0.15
+ 		}
+	}
+
+}
+
+PRC_equipment_organization = {
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	equipment_type = {
+		infantry_equipment
+		artillery_equipment
+		anti_tank_equipment
+		anti_air_equipment
+		rocket_artillery_equipment
+		motorized_equipment
+		mechanized_equipment
+		motorized_rocket_equipment
+		armored_car_equipment
+		support_equipment
+		train_equipment
+		railway_gun_equipment
+		amphibious_mechanized_equipment
+		helicopter_equipment
+		armored_support_vehicle
+		motorbike_equipment
+		super_heavy_artillery_equipment
+		self_propelled_super_heavy_artillery_equipment
+		super_heavy_railway_gun_equipment
+		explosive_ammo_equipment
+	}
+	research_categories = {
+		infantry_weapons
+		mio_cat_all_artillery_equipment
+		motorized_equipment
+		mot_rockets
+		cat_armored_cars
+		support_tech
+		train_tech
+		night_vision
+		cat_special_forces_generic
+	}
+
+	allowed = {	
+		tag = PRC
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	tree_header_text = {
+		text = mio_header_equipment_and_specialization
+		x = 4
+	}
+
+	initial_trait = {
+		name = generic_mio_initial_trait_infantry_manufacturer
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.15
+		}
+
+		equipment_bonus = {
+			reliability = 0.15
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.2
+			production_efficiency_cap_factor = 0.15
+			production_resource_need_factor = -0.2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_advanced_artillery_racks
+		name = generic_mio_trait_advanced_artillery_racks
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		equipment_bonus = {
+			soft_attack = 0.10
+		}
+
+		position = { x=0 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_improved_small_arms_bullet_design
+		name = generic_mio_trait_improved_small_arms_bullet_design
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		equipment_bonus = {
+			hard_attack = 0.10
+		}
+
+		position = { x=0 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_command_upgrades
+		name = generic_mio_trait_command_upgrades
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		equipment_bonus = {
+			defense = 0.10
+		}
+
+		position = { x=2 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_light_flame_projectors
+		name = generic_mio_trait_light_flame_projectors
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		equipment_bonus = {
+			breakthrough = 0.10
+		}
+
+		position = { x=2 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_mounted_light_anti_tank_gun
+		name = generic_mio_trait_mounted_light_anti_tank_gun
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		equipment_bonus = {
+			soft_attack = 0.10
+		}
+
+		position = { x=4 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_advanced_anti_air_targeting
+		name = generic_mio_trait_advanced_anti_air_targeting
+		icon = GFX_generic_mio_department_icon_anti_air
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		position = { x=4 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_simplified_suspension
+		name = generic_mio_trait_simplified_suspension
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		equipment_bonus = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+
+		position = { x=6 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_reinforced_wheels
+		name = generic_mio_trait_reinforced_wheels
+		icon = GFX_generic_mio_department_icon_armored_car_engine
+
+		equipment_bonus = {
+			defense = 0.10
+		}
+
+		position = { x=6 y=2 }
+	}
+
+	trait = {
+		token = generic_mio_trait_closed_chassi
+		name = generic_mio_trait_closed_chassi
+		icon = GFX_generic_mio_department_icon_mechanized_hull
+
+		equipment_bonus = {
+			hard_attack = 0.10
+		}
+
+		position = { x=8 y=0 }
+	}
+
+	trait = {
+		token = generic_mio_trait_bulletproof_panels
+		name = generic_mio_trait_bulletproof_panels
+		icon = GFX_generic_mio_trait_icon_hardness
+
+		equipment_bonus = {
+			breakthrough = 0.10
+		}
+
+		position = { x=8 y=2 }
+	}
+}

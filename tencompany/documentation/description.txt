@@ -1,0 +1,3 @@
+This mod adds 10 additional slots for support companies (making a total of 15). This is a bit overkill, but if you pair it with my Support Company Expansion mod, it's very nice.
+
+I once had this included with it, but if I don't update this in time, it breaks things so I split it up to cause less issues.

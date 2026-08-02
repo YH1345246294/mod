@@ -1,0 +1,81 @@
+spriteTypes = {
+	spriteType = { 
+		name = "GFX_unit_modern_flame_tank_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_modern_flamethrower_tank_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_modern_flame_tank_icon_medium_white"					
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_flamethrower_tank_icon.dds" noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_modern_flame_tank_icon_small"							
+		textureFile = "gfx/texticons/unit_modern_flame_tank_icon_small.dds" noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_convoy"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_convoy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_support_ship"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_convoy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_armored_support_vehicle"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_land_car.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_motorbike_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_land_car.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_super_heavy_artillery_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_land_artillery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_self_propelled_super_heavy_artillery_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_land_artillery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_explosive_ammo_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_land_artillery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_super_heavy_railway_gun_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_land_artillery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_mothership_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_plane.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_ballistic_missile_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_missile.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_strat_bomber_intercontinental_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_plane.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_nuclear_missile_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_missile.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_military_industrial_organization_sam_missile_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_missile.dds"
+	}
+}
