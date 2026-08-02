@@ -383,9 +383,9 @@ PRC_dalian_shipbuilding_company_organization = {
  	available = {
  		OR = {
 	 		PRC = {
- 				controls_state = 716
+ 				controls_state = 745
  			}
- 			716 = {
+ 			745 = {
  				has_dynamic_modifier = {
  					modifier = PRC_infiltrated_state_3
  				}
@@ -435,8 +435,8 @@ PRC_dalian_shipbuilding_company_organization = {
  			}
  		}
 
- 		production_bonus = {
- 			production_conversion_speed_factor = 0.4
+ 		on_complete = {
+ 			FROM = { add_ideas = PRC_refitting_bonus }
  		}
 
  		organization_modifier = {

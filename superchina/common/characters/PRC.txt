@@ -11,6 +11,7 @@ characters={
 			}
 
 			name=PRC_mao_zedong
+			can_be_captured = no
 			portraits={
 				army={
 					large="GFX_portrait_prc_mao_zedong"
@@ -154,6 +155,7 @@ characters={
 			}
 
 			name=PRC_mao_zedong
+			can_be_captured = no
 			portraits={
 				army={
 					large="GFX_portrait_prc_mao_zedong"
@@ -961,6 +963,7 @@ PRC_zhang_wentian = {
 
 	PRC_li_zhen={ 
 		name=PRC_li_zhen
+		gender = female
 		portraits={
 			civilian={
 				large = GFX_portrait_PRC_li_zhen
@@ -1495,6 +1498,7 @@ PRC_zhang_wentian = {
 
 	PRC_cai_chang={ 
 		name=PRC_cai_chang
+		gender = female
 		portraits={
 			civilian={
 				small = GFX_portrait_PRC_cai_chang
@@ -1719,6 +1723,7 @@ PRC_zhang_wentian = {
 
 	PRC_deng_yingchao={ 
 		name=PRC_deng_yingchao
+		gender = female
 		portraits={
 			civilian={
 				small = GFX_portrait_PRC_deng_yingchao
@@ -3964,6 +3969,7 @@ PRC_zhang_wentian = {
 
 	PRC_zhang_qinqiu={
 		name=PRC_zhang_qinqiu
+		gender = female
 		portraits={
 			army={
 				large = GFX_portrait_PRC_zhang_qinqiu
@@ -4035,6 +4041,7 @@ PRC_zhang_wentian = {
 
 	PRC_he_zehui= {
 		name = PRC_he_zehui
+		gender = female
 		portraits = {
 			army = {
 				large = GFX_portrait_PRC_he_zehui

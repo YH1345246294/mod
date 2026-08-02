@@ -7576,6 +7576,7 @@ focus = {
 		}
 
 		available = {
+			is_subject = no 
 			is_faction_leader = yes
 			faction_influence_ratio > 0.5
 			any_allied_country = {
@@ -7586,6 +7587,7 @@ focus = {
 			}
 			event_target:WTT_current_china_leader = {
 				exists = yes
+				is_in_faction_with = ROOT
 			}
 		}
 		
@@ -7856,6 +7858,11 @@ focus = {
 					}
 				}
 			}
+			NOT = {
+				any_enemy_country = {
+					original_tag = KOR
+				}
+			}
 		}
 		
 		bypass = {
@@ -7998,7 +8005,20 @@ focus = {
 
 		available = {
 			is_subject = no
+			NOT = {
+				any_enemy_country = {
+					OR = {
+						original_tag = MON
+						original_tag = TAN
+						original_tag = SOV
+					}
+				}
+			}
 		}
+
+		will_lead_to_war_with = MON
+		will_lead_to_war_with = TAN
+		will_lead_to_war_with = SOV
 		
 		bypass = {
 
@@ -8063,6 +8083,28 @@ focus = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = PRC_unlock_integration_decisions_tt
+
+			every_controlled_state = {
+				limit = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					OR = {
+						is_core_of = TAN
+						is_core_of = MON
+						state = 732
+						state = 586
+						state = 589
+						state = 588
+						state = 408
+						state = 409
+						state = 560
+						state = 657
+						state = 561
+					}
+				}
+				add_core_of = ROOT
+			}
 
 		}
 	}
@@ -8441,7 +8483,7 @@ focus = {
 				effect_tooltip = {
 					CHI = {
 						add_country_leader_role = {
-							character = CHI_zhang_lan
+							character = CHI_chen_mingshu
 							promote_leader = yes
 							country_leader = {
 								ideology = socialism
@@ -11509,7 +11551,21 @@ focus = {
 					uses = 2
 					category = cat_mountaineers_doctrine
 				}
-
+				custom_effect_tooltip = mountaineer_subdoctrines_default_add_mastery_bonus_effect_tooltip
+				hidden_effect = {
+					add_mastery_bonus = {
+						name = PRC_master_the_terrain
+						bonus = 0.1
+						days = 240
+						sub_doctrine = mountaineers_1
+					}
+					add_mastery_bonus = {
+						name = PRC_master_the_terrain
+						bonus = 0.1
+						days = 240
+						sub_doctrine = mountaineers_2
+					}
+				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
@@ -12582,6 +12638,7 @@ focus = {
 		available = {
 			SOV = {
 				exists = yes
+				surrender_progress < 0.2
 				is_subject = no
 				has_government = communism
 			}
@@ -12592,6 +12649,7 @@ focus = {
 				OR = {
 					exists = no
 					is_subject = yes
+					surrender_progress > 0.2
 					NOT = {
 						has_government = communism
 					}
@@ -12627,7 +12685,8 @@ focus = {
 	focus = {
 		id = PRC_a_modern_army 
 		icon = GFX_focus_PRC_a_modern_army
-		prerequisite = { focus = PRC_army_doctrines focus = PRC_appeal_for_foreign_aid }
+		prerequisite = { focus = PRC_army_doctrines }
+		prerequisite = { focus = PRC_appeal_for_foreign_aid }
 		x = -1
 		y = 1
 		relative_position_id = PRC_appeal_for_foreign_aid 
@@ -14580,12 +14639,15 @@ focus = {
 			}
 
 			set_technology = { 
+				AST_war_carriers_tech = 1 
 				BEL_chasseurs_ardennais = 1 
+				BEL_chasseurs_ardennais_ncns = 1 
 				bicycle_infantry = 1 
 				blackshirt_assault_battalion_tech = 1 
 				camelry = 1 
 				camicie_nere_security_militias = 1 
 				coastal_defense_ships = 1 
+				cruiser_submarines = 1 
 				desert_training_tech = 1 
 				elephantry = 1 
 				ETH_improved_irregular_infantry_tech = 1 
@@ -14594,6 +14656,8 @@ focus = {
 				HUN_light_infantry_tech = 1 
 				JAP_lighter_tanks = 1 
 				JAP_silver_wheels = 1 
+				jungle_tanks = 1 
+				jungle_heavy_tanks = 1 
 				jungle_training_tech = 1 
 				jungle_warfare = 1 
 				lar_decryption_bonus_tech = 1 
@@ -14607,8 +14671,17 @@ focus = {
 				mountain_tanks = 1 
 				mountain_warfare = 1 
 				mountain_warfare_militias_tech = 1 
+				MUN_anti_tank_development_tech = 1 
+				MUN_camo_netting = 1 
+				MUN_CZE_establish_air_defense_zones = 1 
+				MUN_horska_artillery = 1 
+				MUN_improved_supply_dumps = 1 
+				MUN_intergrate_fortification_engineers = 1 
+				MUN_merge_the_financial_and_state_guard_tech = 1 
+				MUN_recon_in_force = 1 
 				NOR_rikstanken_tech = 1 
 				NORDIC_supportCollaboration_tech = 1 
+				northern_territory_recon_support_tech = 1 
 				panzerschiffe = 1 
 				penal_infantry = 1 
 				PHI_battalion_combat_teams = 1 
@@ -14634,7 +14707,10 @@ focus = {
 			}
 
 			hidden_effect = {
-			    unlock_tactic = tactic_masterful_blitz
+			    unlock_tactic = {
+					tactic_masterful_blitz 
+					tactic_masterful_delay 
+				}
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt

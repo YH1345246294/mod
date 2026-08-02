@@ -587,7 +587,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = PRC_passive_revolutionaries_idea_tt
-				political_power_gain = -0.15
+				political_power_gain = -0.2
 				stability_factor = -0.1
 				war_support_factor = -0.1
 			}
@@ -1284,7 +1284,7 @@ ideas = {
 
 		PRC_government_corruption = { 
 
-			picture = anti_soviet_pact
+			picture = ARG_political_corruption_modifier
 
 			allowed = { original_tag = PRC }
 
@@ -1372,6 +1372,24 @@ ideas = {
 				land_reinforce_rate = 0.01
 			}
 		}
+
+		PRC_refitting_bonus = {
+
+			name = PRC_dalian_shipbuilding_company_carrier_learners
+
+			picture = generic_the_london_naval_treaty
+
+			allowed = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				refit_speed = 0.15 
+			}
+		}
+
 	}
 
 	hidden_ideas = {
@@ -1793,6 +1811,7 @@ ideas = {
 			}
 		}
 
+		
 		PRC_a_new_central_committe_hidden_idea = { ## Hidden idea
 			name = PRC_central_committee
 			picture = MEX_revolutionary_army
