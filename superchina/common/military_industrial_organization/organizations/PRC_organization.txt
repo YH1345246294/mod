@@ -114,15 +114,19 @@
 PRC_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
-	equipment_type = { 
-		armor 
-	}
-	research_categories = {
-		mio_cat_tech_all_armor_and_modules
+	equipment_type = {
+		armor
+		motorized_equipment
 		mechanized_equipment
 		armored_car_equipment
 		train_equipment
 		amphibious_mechanized_equipment
+	}
+	research_categories = {
+		mio_cat_tech_all_armor_and_modules
+		motorized_equipment
+		cat_armored_cars
+		train_tech
 	}
 
 	allowed = {	
