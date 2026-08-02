@@ -1430,7 +1430,7 @@ equipments = {
 			}
 		}
 	}
-
+	
 	cv_small_plane_airframe_5 = { #supersonic
 		abbreviation = "afc5"
 		derived_variant_name = jet_fighter_equipment_1 # We should use "jet" for this or any of the ones below, but this is good enough for now.

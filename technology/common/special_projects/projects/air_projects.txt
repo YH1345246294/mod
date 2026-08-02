@@ -1406,7 +1406,7 @@ sp_air_supersonic_jet = {
 				has_dlc = "By Blood Alone"
 			}
 			small_plane_airframe_5 
-			cv_small_plane_airframe_5
+			cv_small_plane_airframe_5 
 		}
 
 		enable_equipments = {

@@ -107,6 +107,14 @@ equipments = {
 					tank_secondary_turret
 				}
 			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
 			
 		}
 		module_count_limit = {
@@ -774,7 +782,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_flamethrower
 				}
 			}
 
@@ -824,14 +831,6 @@ equipments = {
 			}
 
 			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
-
-			special_type_slot_5 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module

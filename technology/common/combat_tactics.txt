@@ -786,7 +786,7 @@ tactic_grand_banzai_charge = { #Special Japan attacker tactic
 		phase = no
 	}
 	
-	active = yes
+	active = no 
 	
 	countered_by = tactic_overwhelming_fire
 	
@@ -906,7 +906,8 @@ tactic_barrage = { #Superior firepower attacker tactic
 	defender = -0.2	
 }
 
-tactic_masterful_blitz = { #Improved version of Blitz for Soviets	
+tactic_masterful_blitz = { #Improved version of Blitz for Soviets
+	
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
@@ -940,6 +941,39 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	attacker = 0.2
 	defender = -0.2
 }
+
+
+tactic_masterful_delay = { #Improved version of Delay for Czechs
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			skill > 2
+			has_trait = trickster
+			has_trait = fast_planner
+			has_trait = ambusher
+			NOT = {
+				has_trait = unyielding_defender
+			}
+			skill_advantage > 1
+		}
+	}
+	
+	active = no
+	
+	base =  {
+		factor = 4
+	}
+	picture = delay
+	countered_by = tactic_shock
+	
+	attacker_movement_speed = -0.30		#
+	attacker = -0.30
+	defender = -0.20
+}
+
 
 tactic_urban_defense = { 
 	is_attacker = no
@@ -1014,7 +1048,7 @@ tactic_sf_barrage = { #Slow moving assault using heavy artillery barrage and art
 		has_artillery_ratio > 0.1
 	}
 	
-	active = no
+	active = yes
 	display_phase = street_fighting
 	
 	base =  {
@@ -1130,7 +1164,7 @@ tactic_sf_ambush = { #countered by mouse holing
 		phase = street_fighting
 	}
 	
-	active = no
+	active = yes
 	display_phase = street_fighting
 	
 	base =  {
