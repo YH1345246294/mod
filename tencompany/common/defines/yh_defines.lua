@@ -38,7 +38,7 @@ NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits o
 	2.0, -- navy general
 	0.0, -- operative
 }
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 500					-- Funds needed for a MIO to increment its size and get points to unlock traits
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 0					-- Funds needed for a MIO to increment its size and get points to unlock traits
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 100		-- How much each level mutliplies the funds for size up 
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_POW = 2			-- the power we applie to the mio size when calculating funds to level up.
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
