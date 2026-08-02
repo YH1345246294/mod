@@ -108,6 +108,13 @@ equipments = {
 				}
 			}
 			
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -349,7 +356,14 @@ equipments = {
 					tank_radio_module
 				}
 			}
-			
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -593,6 +607,13 @@ equipments = {
 				}
 			}
 
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -1023,6 +1044,13 @@ equipments = {
 				}
 			}
 
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -1202,6 +1230,13 @@ equipments = {
 				}
 			}
 
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -1389,6 +1424,13 @@ equipments = {
 			}
 
 			lc_additional_armament_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					lc_additional_armament
+				}
+			}
+
+			lc_additional_armament_slot_5 = {
 				required = no
 				allowed_module_categories = {
 					lc_additional_armament
