@@ -8,8 +8,8 @@ NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 10
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 5                   -- how many battalions should a division have to count as a full divisions when calculating XP stuff
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 3			-- Max width of support in division designer.
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5		-- Max height of support in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 1			-- Max width of support in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 10		-- Max height of support in division designer.
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.7, 0.9 }		-- Experience needed to progress to the next level
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.25
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.50			   -- Base xp gain for traits per hour for armies
@@ -25,7 +25,7 @@ NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5					-- xp gain ratio for army gr
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1000		--Max army experience a country can store
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1000		--Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1000				--Max air experience a country can store
-NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 5			-- armies gets increased cap when they are garrisoned
+NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 2			-- armies gets increased cap when they are garrisoned
 NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
 	0.0, -- field marshal
 	0.0, -- corps commander
@@ -38,8 +38,8 @@ NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits o
 	2.0, -- navy general
 	0.0, -- operative
 }
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 625					-- Funds needed for a MIO to increment its size and get points to unlock traits
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 500					-- Funds needed for a MIO to increment its size and get points to unlock traits
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 100		-- How much each level mutliplies the funds for size up 
-NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_POW = 1.6			-- the power we applie to the mio size when calculating funds to level up.
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_POW = 2			-- the power we applie to the mio size when calculating funds to level up.
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 2000
