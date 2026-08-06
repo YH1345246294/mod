@@ -10552,7 +10552,7 @@ focus = {
 			custom_effect_tooltip = PRC_make_agrarian_to_urban_tt
 
 			add_to_variable = { 
-				PRC_industry_industrial_capacity_factory = 0.025
+				PRC_industry_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
 
