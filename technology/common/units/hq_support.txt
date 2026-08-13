@@ -354,8 +354,7 @@ sub_units = {
 		}
 
 		deployed_leader_modifiers = {
-			supply_consumption_factor = -0.05
-			fuel_consumption_factor = -0.05
+			supply_consumption_factor = -0.1
 		}
 
 		enable_ability = { front_overrun }
