@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+ modern_flame_armor:0 "现代喷火坦克连"
+ modern_flame_tank:0 "现代喷火坦克连"
+ modern_tank_flame_chassis:0 "现代喷火坦克"
+ modern_tank_flame_chassis_desc:0 "一款现代战车，在其炮塔中携带火焰喷射器用以攻击防御工事和房屋。"
+ modern_tank_flame_chassis_1:0 "现代喷火坦克"
+ modern_tank_flame_equipment_1:0 "现代喷火坦克"
+ cv_small_plane_airframe_5:0 "超音速舰载机机身"
+ cv_small_plane_airframe_5_desc:0 "这种先进机身能够以1马赫超音速飞行，体现了人类工程学的巅峰。"
+ cv_small_plane_cas_airframe_5_desc:0 "$cv_small_plane_airframe_5_desc$"
+ cv_small_plane_naval_bomber_airframe_5_desc:0 "$small_plane_airframe_5_desc$"
+ cv_small_plane_suicide_airframe_5_desc:0 "$small_plane_airframe_5_desc$"

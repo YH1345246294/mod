@@ -332,6 +332,18 @@ assault_infantry = {
                     add = yes
                 }
             }
+            armored_car_recon = {
+                max_organisation = 20
+                battalion_mult = {
+                    category = category_all_infantry
+                    breakthrough = 0.2
+                }
+                battalion_mult = {
+                    category = category_all_infantry
+                    max_organisation = 5
+                    add = yes
+                }
+            }
             mot_recon = {
                 max_organisation = 20
                 battalion_mult = {
@@ -803,6 +815,7 @@ peoples_war = {
 		
         quick_decision_offensive_warfare = {
         #3
+            mastery = 50
             militia = {
                initiative = 0.015
                max_organisation = 10
@@ -817,6 +830,26 @@ peoples_war = {
                 soft_attack = 0.1
                 max_strength = 0.15
             }
+        }
+
+        protracted_war = {
+        #5
+            mastery = 50
+            militia = {
+                defense = 0.1
+                initiative = 0.005
+                equipment_capture_factor = 0.01
+            } 
+            category_light_infantry = {
+                default_morale = 0.1
+                soft_attack = 0.1
+                max_organisation = 5
+                max_strength = 0.05
+                maximum_speed = 0.2
+            }
+            field_guns = {
+				soft_attack = 0.05				
+			}
         }
     }
 }

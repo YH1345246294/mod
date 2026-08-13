@@ -1,0 +1,12 @@
+﻿l_english:
+ modern_flame_armor:0 "Modern Flame Tank"
+ modern_flame_tank:0 "Modern Flame Tank"
+ modern_tank_flame_chassis:0 "Modern Flame Tank"
+ modern_tank_flame_chassis_desc:0 "A modern vehicle, carrying a flamethrower in its turret to attack fortifications and houses."
+ modern_tank_flame_chassis_1:0 "Modern Flame Tank"
+ modern_tank_flame_equipment_1:0 "Modern Flame Tank"
+ cv_small_plane_airframe_5:0 "Supersonic Carrier Airframe"
+ cv_small_plane_airframe_5_desc:0 "This advanced airframe, capable of Mach 1 supersonic flight embodies the pinnacle of human engineering"
+ cv_small_plane_cas_airframe_5_desc:0 "$cv_small_plane_airframe_5_desc$"
+ cv_small_plane_naval_bomber_airframe_5_desc:0 "$small_plane_airframe_5_desc$"
+ cv_small_plane_suicide_airframe_5_desc:0 "$small_plane_airframe_5_desc$"
