@@ -32,7 +32,7 @@ equipments = {
 		
 		upgrades = {
 			tank_reliability_upgrade
-			tank_engine_upgrade
+			tank_gun_upgrade
 			tank_armor_upgrade
 			mech_cost_upgrade
 		}
