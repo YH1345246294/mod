@@ -247,8 +247,7 @@ PRC_tank_organization = {
 		icon = GFX_generic_mio_department_icon_tank_light_tank_armor
 
 		equipment_bonus = {
-			armor_value = 0.05 
-			maximum_speed = 0.05 
+			maximum_speed = 0.10 
 		}
 
 		position = { x=6 y=2 }
