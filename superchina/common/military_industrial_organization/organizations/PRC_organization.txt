@@ -637,7 +637,7 @@ PRC_ship_organization = {
 		icon = GFX_generic_mio_trait_icon_sub_attack
 
 		equipment_bonus = {
-			anti_air_attack = 0.10
+			naval_torpedo_damage_reduction_factor = 0.10
 		}
 
 		position = { x=4 y=2 }
@@ -661,7 +661,7 @@ PRC_ship_organization = {
 		icon = GFX_generic_mio_department_icon_ship_capital_screen_armor
 
 		equipment_bonus = {
-			surface_detection = 0.10
+			naval_torpedo_enemy_critical_chance_factor = -0.10
 		}
 
 		position = { x=6 y=2 }
