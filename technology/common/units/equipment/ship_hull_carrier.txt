@@ -121,7 +121,7 @@ equipments = {
 
 		surface_detection = 20
 		sub_detection = 1
-		surface_visibility = 30
+		surface_visibility = 20
 		naval_speed = 26
 		reliability = 0.70
 
@@ -466,7 +466,7 @@ equipments = {
 		max_strength = 350
 
 		build_cost_ic = 4500
-		surface_visibility = 40
+		surface_visibility = 30
 		naval_speed = 18
 		naval_dominance_factor = 350
 		fuel_consumption = 90		
@@ -614,7 +614,7 @@ equipments = {
 		}
 		surface_detection = 20
 		sub_detection = 1
-		surface_visibility = 30
+		surface_visibility = 15
 		naval_speed = 22
 		reliability = 0.70
 
