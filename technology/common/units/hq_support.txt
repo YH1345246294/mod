@@ -622,10 +622,10 @@ sub_units = {
 		required_dlc = { "Thunder at Our Gates" }
 
 		#Size Definitions
-		max_strength = 20
+		max_strength = 15
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 800
+		manpower = 600
 		deployment_cost = 3
 		training_time = 90
 
@@ -665,10 +665,10 @@ sub_units = {
 		required_dlc = { "Thunder at Our Gates" }
 
 		#Size Definitions
-		max_strength = 20
+		max_strength = 15
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 800
+		manpower = 600
 		deployment_cost = 3
 		training_time = 90
 
