@@ -42,6 +42,7 @@ NDefines.NMilitary.LEADER_MOD_COMMS_SCALING = { 1.10, 1.06, 1.03, 1.01, 1.0 }		-
 NDefines.NMilitary.ABILITY_COMMS_SCALING = { 1.10, 1.06, 1.03, 1.01, 1.0 }		-- Same as PLANNING_CAP_COMMS_SCALING but for active abilities
 NDefines.NMilitary.REGIMENTAL_SUPPORT_REQUIRED_BATTALIONS = { 1 }		-- For each regimental support row, how many battalions are required in the regiment to be able to place a support in that row.
 NDefines.NMilitary.MAX_HQ_BATTALION_HEIGHT = 5		-- Max height of regiments in division designer (Army HQ templates).
+NDefines.NMilitary.MAX_HQ_SUPPORT_WIDTH = 2		-- Max width of support in division designer (Army HQ templates).
 NDefines.NMilitary.MAX_HQ_SUPPORT_HEIGHT = 5		-- Max height of support in division designer (Army HQ templates).
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 0					-- Funds needed for a MIO to increment its size and get points to unlock traits
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 100		-- How much each level mutliplies the funds for size up 

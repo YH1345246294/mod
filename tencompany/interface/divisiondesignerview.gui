@@ -602,11 +602,11 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "support_grid"
-				position = { x = 45 y = 350 }
-				size = { width = 328 height = 35 }
+				position = { x = 45 y = 323 }
+				size = { width = 328 height = 72 }
 				slotsize = { width = 64 height = 35 }
 				max_slots_horizontal = 5
-				max_slots_vertical = 1
+				max_slots_vertical = 2
 				format = "UPPER_LEFT"
 			}
 		}
