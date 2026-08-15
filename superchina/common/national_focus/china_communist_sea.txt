@@ -12673,8 +12673,6 @@ focus = {
 			custom_effect_tooltip = PRC_appeal_for_foreign_aid_unlock_decision_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-			
 		}
 	}
 
@@ -14630,13 +14628,6 @@ focus = {
 			add_ideas = PRC_central_military_commission_idea
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			every_army_leader = {
-				add_attack = 1
-				add_defense = 1
-				add_planning = 1
-				add_logistics = 1
-			}
 
 			set_technology = { 
 				AST_war_carriers_tech = 1 

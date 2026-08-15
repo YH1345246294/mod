@@ -39,10 +39,10 @@ characters={
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 				visible = {
 					NOT = {
@@ -457,7 +457,7 @@ characters={
 			skill=3
 			attack_skill=4
 			defense_skill=3
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
 		}
@@ -950,10 +950,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 
@@ -1002,10 +1002,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -1090,10 +1090,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -1197,10 +1197,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -1532,10 +1532,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -1575,10 +1575,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -1996,10 +1996,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -2082,10 +2082,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -2163,10 +2163,10 @@ PRC_zhang_wentian = {
 				}
 				traits={ infantry_officer old_guard PRC_survivor_of_the_long_march }
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -2567,10 +2567,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -2654,10 +2654,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -2733,10 +2733,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -2810,10 +2810,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 
@@ -2893,10 +2893,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 
@@ -2986,10 +2986,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 
@@ -3028,7 +3028,7 @@ PRC_zhang_wentian = {
 				skill=2
 				attack_skill=3
 				defense_skill=2
-				planning_skill=1
+				planning_skill=2
 				logistics_skill=2
 				legacy_id=-1
 			}
@@ -3330,10 +3330,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -3472,10 +3472,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -3527,10 +3527,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -3583,10 +3583,10 @@ PRC_zhang_wentian = {
 				brave 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3616,10 +3616,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3649,10 +3649,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 			visible = {
 				has_completed_focus = PRC_cooperate_ulanhu
@@ -3690,10 +3690,10 @@ PRC_zhang_wentian = {
 					PRC_survivor_of_the_long_march 
 				}
 				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=1
-				logistics_skill=1
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 				legacy_id=-1
 			}
 		}
@@ -3758,10 +3758,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3792,10 +3792,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3825,10 +3825,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3858,10 +3858,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3892,10 +3892,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3926,10 +3926,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3959,10 +3959,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -3993,10 +3993,10 @@ PRC_zhang_wentian = {
 				PRC_survivor_of_the_long_march 
 			}
 			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
