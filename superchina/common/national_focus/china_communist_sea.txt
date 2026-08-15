@@ -12675,10 +12675,6 @@ focus = {
 
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
 			
-			add_to_variable = {
-				PRC_the_chinese_army_army_armor_attack_factor = 0.05
-				tooltip = army_armor_attack_factor_tt
-			}
 		}
 	}
 
@@ -12731,7 +12727,10 @@ focus = {
 				PRC_the_chinese_army_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
-			
+			add_to_variable = {
+				PRC_the_chinese_army_army_armor_attack_factor = 0.05
+				tooltip = army_armor_attack_factor_tt
+			}
 		}
 	}
 
