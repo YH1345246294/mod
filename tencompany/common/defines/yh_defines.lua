@@ -25,7 +25,7 @@ NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5					-- xp gain ratio for army gr
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1000		--Max army experience a country can store
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1000		--Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1000				--Max air experience a country can store
-NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 2			-- armies gets increased cap when they are garrisoned
+NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 4			-- armies gets increased cap when they are garrisoned
 NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
 	0.0, -- field marshal
 	0.0, -- corps commander
