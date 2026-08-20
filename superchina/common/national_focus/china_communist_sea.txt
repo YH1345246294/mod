@@ -2065,7 +2065,7 @@ focus_tree = {
 				}
 			}
 			USA = {
-				is_subject = no
+				#is_subject = no
 				NOT = {
 					has_war_with = ROOT
 					has_government = fascism
@@ -2131,7 +2131,7 @@ focus_tree = {
 				}
 			}
 			USA = {
-				is_subject = no
+				#is_subject = no
 				NOT = {
 					has_war_with = ROOT
 					has_government = fascism
@@ -2297,7 +2297,7 @@ focus_tree = {
 				}
 			}
 			SOV = {
-				is_subject = no
+				#is_subject = no
 				has_government = communism
 				NOT = {
 					has_war_with = ROOT
@@ -2358,7 +2358,7 @@ focus_tree = {
 				}
 			}
 			SOV = {
-				is_subject = no
+				#is_subject = no
 				has_government = communism
 				NOT = {
 					has_war_with = ROOT
