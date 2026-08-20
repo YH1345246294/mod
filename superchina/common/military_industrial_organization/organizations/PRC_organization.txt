@@ -163,7 +163,7 @@ PRC_tank_organization = {
 		icon = GFX_generic_mio_trait_icon_ap_attack
 
 		equipment_bonus = {
-			armor_value = 0.10
+			soft_attack = 0.10
 		}
 
 		position = { x=0 y=0 }
@@ -175,7 +175,7 @@ PRC_tank_organization = {
 		icon = GFX_generic_mio_trait_icon_soft_attack
 
 		equipment_bonus = {
-			armor_value = 0.10
+			soft_attack = 0.10
 		}
 
 		position = { x=0 y=2 }
@@ -187,7 +187,8 @@ PRC_tank_organization = {
 		icon = GFX_generic_mio_trait_icon_breakthrough
 
 		equipment_bonus = {
-			armor_value = 0.10
+			soft_attack = 0.05
+			breakthrough = 0.05
 		}
 
 		position = { x=2 y=0 }
@@ -199,7 +200,7 @@ PRC_tank_organization = {
 		icon = GFX_generic_mio_trait_icon_soft_attack
 
 		equipment_bonus = {
-			armor_value = 0.10
+			breakthrough = 0.10
 		}
 
 		position = { x=2 y=2 }
@@ -211,7 +212,7 @@ PRC_tank_organization = {
 		icon = GFX_generic_mio_department_icon_tank_general_armor
 
 		equipment_bonus = {
-			armor_value = 0.10
+			breakthrough = 0.10
 		}
 
 		position = { x=4 y=0 }
