@@ -124,7 +124,7 @@ PRC_tank_organization = {
 	}
 	research_categories = {
 		mio_cat_tech_all_armor_and_modules
-		motorized_equipment
+		mio_cat_tech_all_motorized_mechanized
 		cat_armored_cars
 		train_tech
 	}
@@ -1171,6 +1171,7 @@ PRC_aircraft_organization = {
 	}
 	research_categories = {
 		air_equipment
+		helicopter_tech
 	}
 
 	allowed = {	
