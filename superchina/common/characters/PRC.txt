@@ -167,12 +167,25 @@ characters={
 				}
 			}
 			field_marshal={
-				traits={ trait_cautious politically_connected defensive_doctrine }
-				skill=4
-				attack_skill=2
-				defense_skill=4
-				planning_skill=3
-				logistics_skill=4
+				traits={ 
+					brilliant_strategist 
+					inflexible_strategist 
+					bearer_of_artillery 
+					infantry_officer 
+					cavalry_officer 
+					armor_officer 
+					engineer_officer 
+					irregulars_officer 
+					ascari_officer 
+					militias_officer 
+					jaeger 
+					brave 
+				}
+				skill=10
+				attack_skill=10
+				defense_skill=10
+				planning_skill=10
+				logistics_skill=10
 				legacy_id=-1
 			}
 			country_leader={ #unlock
@@ -207,7 +220,21 @@ characters={
 		#	id = -1
 		#}
 		field_marshal = {
-			traits={ infantry_officer }
+			traits={ 
+				brilliant_strategist 
+				inflexible_strategist 
+				bearer_of_artillery 
+				infantry_officer 
+				cavalry_officer 
+				armor_officer 
+				engineer_officer 
+				irregulars_officer 
+				ascari_officer 
+				militias_officer 
+				jaeger 
+				brave 
+				PRC_survivor_of_the_long_march 
+			}
 			visible = {
 				has_country_flag = PRC_zhang_guatao_arrived
 				NOT = {
@@ -217,8 +244,8 @@ characters={
 					has_character_flag = PRC_dismissed_advisor
 				}
 			}
-			skill=3
-			attack_skill=4
+			skill=1
+			attack_skill=2
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
@@ -984,30 +1011,6 @@ PRC_zhang_wentian = {
 				base  = 1.000
 			}
 		}
-
-		field_marshal={
-			traits={ 
-				brilliant_strategist 
-				inflexible_strategist 
-				bearer_of_artillery 
-				infantry_officer 
-				cavalry_officer 
-				armor_officer 
-				engineer_officer 
-				irregulars_officer 
-				ascari_officer 
-				militias_officer 
-				jaeger 
-				brave 
-				PRC_survivor_of_the_long_march 
-			}
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
 	}
 
 	PRC_li_lisan={ 
@@ -1073,27 +1076,20 @@ PRC_zhang_wentian = {
 				}
 			}
 
-			field_marshal={
+			navy_leader={
 				traits={ 
-					brilliant_strategist 
-					inflexible_strategist 
-					bearer_of_artillery 
-					infantry_officer 
-					cavalry_officer 
-					armor_officer 
-					engineer_officer 
-					irregulars_officer 
-					ascari_officer 
-					militias_officer 
-					jaeger 
-					brave 
-					PRC_survivor_of_the_long_march 
+					gunnery_expert 
+					chief_engineer 
+					bold 
+					navy_career_officer 
+					aviation_enthusiast 
+					navy_media_personality 
 				}
 				skill=1
-				attack_skill=2
-				defense_skill=2
-				planning_skill=2
-				logistics_skill=2
+				attack_skill=4
+				defense_skill=3
+				maneuvering_skill=3
+				coordination_skill=3
 				legacy_id=-1
 			}
 		}
@@ -1179,29 +1175,6 @@ PRC_zhang_wentian = {
 			ai_will_do  = {
 				base  = 1.000
 			}
-		}
-		field_marshal={
-			traits={ 
-				brilliant_strategist 
-				inflexible_strategist 
-				bearer_of_artillery 
-				infantry_officer 
-				cavalry_officer 
-				armor_officer 
-				engineer_officer 
-				irregulars_officer 
-				ascari_officer 
-				militias_officer 
-				jaeger 
-				brave 
-				PRC_survivor_of_the_long_march 
-			}
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 
@@ -1515,29 +1488,6 @@ PRC_zhang_wentian = {
 				PRC_member_of_central_committee
 			}
 		}
-		field_marshal={
-			traits={ 
-				brilliant_strategist 
-				inflexible_strategist 
-				bearer_of_artillery 
-				infantry_officer 
-				cavalry_officer 
-				armor_officer 
-				engineer_officer 
-				irregulars_officer 
-				ascari_officer 
-				militias_officer 
-				jaeger 
-				brave 
-				PRC_survivor_of_the_long_march 
-			}
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
 	}
 
 	PRC_wu_yuzhang={ 
@@ -1557,29 +1507,6 @@ PRC_zhang_wentian = {
 			traits  = {
 				PRC_professor
 			}
-		}
-		field_marshal={
-			traits={ 
-				brilliant_strategist 
-				inflexible_strategist 
-				bearer_of_artillery 
-				infantry_officer 
-				cavalry_officer 
-				armor_officer 
-				engineer_officer 
-				irregulars_officer 
-				ascari_officer 
-				militias_officer 
-				jaeger 
-				brave 
-				PRC_survivor_of_the_long_march 
-			}
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 
@@ -2328,22 +2255,6 @@ PRC_zhang_wentian = {
 				base = 1.000
 			}
 		}
-		navy_leader={
-			traits={ 
-				gunnery_expert 
-				chief_engineer 
-				bold 
-				navy_career_officer 
-				aviation_enthusiast 
-				navy_media_personality 
-			}
-			skill=1
-			attack_skill=4
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=-1
-		}
 	}
 
 
@@ -2636,29 +2547,6 @@ PRC_zhang_wentian = {
 				ai_will_do = {
 					base = 1.000
 				}
-			}
-			field_marshal={
-				traits={ 
-					brilliant_strategist 
-					inflexible_strategist 
-					bearer_of_artillery 
-					infantry_officer 
-					cavalry_officer 
-					armor_officer 
-					engineer_officer 
-					irregulars_officer 
-					ascari_officer 
-					militias_officer 
-					jaeger 
-					brave 
-					PRC_survivor_of_the_long_march 
-				}
-				skill=1
-				attack_skill=2
-				defense_skill=2
-				planning_skill=2
-				logistics_skill=2
-				legacy_id=-1
 			}
 		}
 		instance = {

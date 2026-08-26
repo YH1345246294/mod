@@ -122,6 +122,8 @@ PRC_tank_organization = {
 		train_equipment
 		amphibious_mechanized_equipment
 		helicopter_equipment
+		railway_gun_equipment
+		super_heavy_railway_gun_equipment
 	}
 	research_categories = {
 		mio_cat_tech_all_armor_and_modules
@@ -1170,11 +1172,9 @@ PRC_aircraft_organization = {
 		strat_bomber_intercontinental_equipment
 		nuclear_missile_equipment
 		sam_missile_equipment
-		helicopter_equipment
 	}
 	research_categories = {
 		air_equipment
-		helicopter_tech
 	}
 
 	allowed = {	
