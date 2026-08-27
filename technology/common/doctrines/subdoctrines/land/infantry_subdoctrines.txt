@@ -276,7 +276,7 @@ assault_infantry = {
         #1
             artillery = {
                 battalion_mult = {
-                    category = category_all_infantry
+                    category = category_light_infantry
                     soft_attack = 0.2
                 }
             }
@@ -392,7 +392,7 @@ assault_infantry = {
                 battalion_mult = {
                     category = category_all_infantry
                     breakthrough = 0.1
-                    soft_attack = 0.1
+                    soft_attack = 0.2
                 }
             }
         }
