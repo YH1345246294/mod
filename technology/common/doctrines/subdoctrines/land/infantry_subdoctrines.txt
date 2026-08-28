@@ -279,6 +279,10 @@ assault_infantry = {
                     category = category_light_infantry
                     soft_attack = 0.2
                 }
+                battalion_mult = {
+                    category = category_vehicle_infantry
+                    soft_attack = 0.05
+                }
             }
             field_guns = {
 				soft_attack = 0.2
