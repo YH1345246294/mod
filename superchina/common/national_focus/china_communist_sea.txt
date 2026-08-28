@@ -12229,7 +12229,7 @@ focus = {
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
 
 			add_to_variable = {
-				PRC_the_chinese_red_army_land_night_attack = 0.1
+				PRC_the_chinese_red_army_land_night_attack = 0.25
 				tooltip = land_night_attack_tt
 			}
 
