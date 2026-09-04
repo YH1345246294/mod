@@ -505,6 +505,9 @@ armored_cavalry = {
                 max_organisation = 5
                 breakthrough = 0.05
             }
+            mechanized =  {
+                soft_attack = 0.05
+            }
         }
         quick_response_force = {
             motorized_military_police = {
