@@ -442,7 +442,7 @@ sub_units = {
 		can_be_parachuted = no
 
 		essential = {
-			support_equipment
+			infantry_equipment
 			armored_support_vehicle
 		}
 
