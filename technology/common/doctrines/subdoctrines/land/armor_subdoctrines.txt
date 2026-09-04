@@ -507,6 +507,7 @@ armored_cavalry = {
             }
             mechanized =  {
                 soft_attack = 0.05
+                defense = 0.05
             }
         }
         quick_response_force = {
