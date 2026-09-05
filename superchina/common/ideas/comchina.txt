@@ -293,7 +293,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.075
+				production_factory_max_efficiency_factor = 0.1
 				cic_construction_boost = 0.05
 			}
 
@@ -376,7 +376,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_start_efficiency_factor = 0.075
+				production_factory_start_efficiency_factor = 0.1
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = 0.1

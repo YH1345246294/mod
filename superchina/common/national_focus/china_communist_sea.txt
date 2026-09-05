@@ -1921,7 +1921,7 @@ focus_tree = {
 					tooltip = equipment_capture_factor_tt  
 				}
 				set_variable = {
-					PRC_maoism_dynamic_modifier_army_defence_factor = 0.075
+					PRC_maoism_dynamic_modifier_army_defence_factor = 0.1
 					tooltip = army_defence_factor_tt  
 				}
 
@@ -12828,7 +12828,7 @@ focus = {
 			
 			custom_effect_tooltip = PRC_pla_air_force_modify_tt
 			add_to_variable = {
-				PRC_pla_air_force_air_ace_generation_chance_factor = 0.075
+				PRC_pla_air_force_air_ace_generation_chance_factor = 0.1
 				tooltip = air_ace_generation_chance_factor_tt
 			}
 			
@@ -13785,7 +13785,7 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = PRC_pla_navy_modify_tt
 			add_to_variable = {
-				PRC_pla_navy_navy_submarine_attack_factor = 0.075
+				PRC_pla_navy_navy_submarine_attack_factor = 0.1
 				tooltip = navy_submarine_attack_factor_tt 
 			}
 
