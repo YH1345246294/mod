@@ -237,6 +237,7 @@ sub_units = {
 		}
 
 		need = {
+			infantry_equipment = 10
 			armored_car_equipment = 20
 		}
 
