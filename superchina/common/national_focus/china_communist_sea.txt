@@ -12609,51 +12609,21 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = PRC_army_doctrines_tt
 
-			if = {
-				limit = {
-					has_doctrine = new_mobile_warfare
-				}
-				custom_effect_tooltip = PRC_army_doctrines_mobile_warfare_tt
-				PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-				add_to_variable = {
-					PRC_the_chinese_army_army_armor_attack_factor = 0.05
-					tooltip = army_armor_attack_factor_tt
-				}
+			add_to_variable = {
+				PRC_the_chinese_army_army_armor_attack_factor = 0.05
+				tooltip = army_armor_attack_factor_tt
 			}
-			else_if = {
-				limit = {
-					has_doctrine = superior_firepower
-				}
-				custom_effect_tooltip = PRC_army_doctrines_superior_firepower__tt
-				PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-				add_to_variable = {
-					PRC_the_chinese_red_army_army_artillery_attack_factor = 0.1
-					tooltip = army_artillery_attack_factor_tt
-				}
-
+			add_to_variable = {
+				PRC_the_chinese_red_army_army_artillery_attack_factor = 0.1
+				tooltip = army_artillery_attack_factor_tt
 			}
-			else_if = {
-				limit = {
-					has_doctrine = grand_battleplan
-				}
-				custom_effect_tooltip = PRC_army_doctrines_grand_battleplan_tt
-				PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-				add_to_variable = {
-					PRC_the_chinese_red_army_max_planning_factor = 0.05
-					tooltip = max_planning_factor_tt
-				}
+			add_to_variable = {
+				PRC_the_chinese_red_army_max_planning_factor = 0.05
+				tooltip = max_planning_factor_tt
 			}
-			else_if = {
-				limit = {
-					has_doctrine = mass_assault
-				}
-				custom_effect_tooltip = PRC_army_doctrines_mass_assault_tt
-				PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-
-				add_to_variable = {
-					PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05
-					tooltip = army_infantry_attack_factor_tt
-				}
+			add_to_variable = {
+				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05
+				tooltip = army_infantry_attack_factor_tt
 			}
 		}
 	}
